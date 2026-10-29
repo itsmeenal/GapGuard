@@ -1,0 +1,1460 @@
+{
+  "project": "GapGuard",
+  "description": "Gap-aware anomaly detection for streaming ADS-B telemetry under packet loss",
+  "experiments": {
+    "isolation_forest": {
+      "model": "IsolationForest",
+      "loss_type": "none",
+      "loss_rate": 0.0,
+      "train_rows": 100000,
+      "validation_rows": 50000,
+      "test_rows": 998060,
+      "attack_rows": 83456,
+      "precision": 0.11379838763408621,
+      "recall": 0.26605636503067487,
+      "f1": 0.15941243408370517,
+      "roc_auc": 0.5673961237637647,
+      "pr_auc": 0.1051207067182612,
+      "fpr": 0.1890577780110299,
+      "threshold": 0.06634141122153792,
+      "tn": 741691,
+      "fp": 172913,
+      "fn": 61252,
+      "tp": 22204
+    },
+    "kalman_comparison": {
+      "experiment": "fixed_step_vs_delta_t_kalman",
+      "fixed_step": {
+        "threshold": 136.6166606547048,
+        "precision": 0.25243348475016225,
+        "recall": 0.03728911042944785,
+        "f1": 0.06497953729224087,
+        "roc_auc": 0.5465841229372957,
+        "pr_auc": 0.11862813599194635,
+        "fpr": 0.010076492121180313,
+        "tn": 905388,
+        "fp": 9216,
+        "fn": 80344,
+        "tp": 3112,
+        "test_rows": 998060,
+        "attack_rows": 83456,
+        "predicted_alerts": 12328
+      },
+      "delta_t_aware": {
+        "threshold": 23.534276739291833,
+        "precision": 0.3239426471647813,
+        "recall": 0.05387269938650307,
+        "f1": 0.09238197976062054,
+        "roc_auc": 0.5306532639786923,
+        "pr_auc": 0.13139060124410074,
+        "fpr": 0.010259084806101876,
+        "tn": 905221,
+        "fp": 9383,
+        "fn": 78960,
+        "tp": 4496,
+        "test_rows": 998060,
+        "attack_rows": 83456,
+        "predicted_alerts": 13879
+      },
+      "fixed_dt_seconds": 5.0,
+      "measurement_features": [
+        "latitude",
+        "longitude",
+        "altitude_meters",
+        "speed_kmh"
+      ],
+      "label_mapping": {
+        "0": "normal",
+        "1": "attack",
+        "2": "attack",
+        "3": "attack"
+      },
+      "note": "Labels are used only for evaluation. Derived columns and label columns are not detector inputs."
+    },
+    "standalone_gru": {
+      "stage": "3.5",
+      "model": "GRU_next_step_prediction",
+      "window_size": 10,
+      "hidden_size": 32,
+      "epochs": 5,
+      "training_rows": 200000,
+      "threshold": 1657.2340087890625,
+      "precision": 0.1258086717136958,
+      "recall": 0.05475939417177914,
+      "f1": 0.07630592497975472,
+      "roc_auc": 0.552285087271934,
+      "pr_auc": 0.10866058866059873,
+      "fpr": 0.034719944369366415,
+      "true_negative": 882849,
+      "false_positive": 31755,
+      "false_negative": 78886,
+      "true_positive": 4570,
+      "predicted_alerts": 36325
+    },
+    "kalman_gru_hybrid": {
+      "stage": "3.6",
+      "model": "delta_t_kalman_gru_residual",
+      "window_size": 8,
+      "hidden_size": 24,
+      "epochs": 5,
+      "training_windows": 150000,
+      "threshold": 0.9924119734763877,
+      "precision": 0.26347402597402597,
+      "recall": 0.03889474693251534,
+      "f1": 0.06778316070831941,
+      "roc_auc": 0.5802476407286303,
+      "pr_auc": 0.1257587610948275,
+      "fpr": 0.009921233670528447,
+      "true_negative": 905530,
+      "false_positive": 9074,
+      "false_negative": 80210,
+      "true_positive": 3246,
+      "predicted_alerts": 12320
+    },
+    "packet_loss": [
+      {
+        "condition": "clean",
+        "model": "fixed_step_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.0,
+        "observability": 1.0,
+        "original_rows": 998060,
+        "surviving_rows": 998060,
+        "original_attack": 83456,
+        "surviving_attack": 83456,
+        "precision": 0.25243348475016225,
+        "recall": 0.03728911042944785,
+        "f1": 0.06497953729224087,
+        "roc_auc": 0.5465841488317139,
+        "pr_auc": 0.11862813895804011,
+        "fpr": 0.010076492121180313,
+        "tn": 905388,
+        "fp": 9216,
+        "fn": 80344,
+        "tp": 3112,
+        "alerts": 12328
+      },
+      {
+        "condition": "clean",
+        "model": "delta_t_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.0,
+        "observability": 1.0,
+        "original_rows": 998060,
+        "surviving_rows": 998060,
+        "original_attack": 83456,
+        "surviving_attack": 83456,
+        "precision": 0.3239426471647813,
+        "recall": 0.05387269938650307,
+        "f1": 0.09238197976062054,
+        "roc_auc": 0.5306532752849826,
+        "pr_auc": 0.1313906043241146,
+        "fpr": 0.010259084806101876,
+        "tn": 905221,
+        "fp": 9383,
+        "fn": 78960,
+        "tp": 4496,
+        "alerts": 13879
+      },
+      {
+        "condition": "random_10",
+        "model": "fixed_step_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.1,
+        "observability": 0.9002588190184049,
+        "original_rows": 998060,
+        "surviving_rows": 898572,
+        "original_attack": 83456,
+        "surviving_attack": 75132,
+        "precision": 0.23250208584407156,
+        "recall": 0.03338124900175691,
+        "f1": 0.05838056774403799,
+        "roc_auc": 0.545664065779026,
+        "pr_auc": 0.11309231458970753,
+        "fpr": 0.01005416302341397,
+        "tn": 815161,
+        "fp": 8279,
+        "fn": 72624,
+        "tp": 2508,
+        "alerts": 10787
+      },
+      {
+        "condition": "random_10",
+        "model": "delta_t_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.1,
+        "observability": 0.9002588190184049,
+        "original_rows": 998060,
+        "surviving_rows": 898572,
+        "original_attack": 83456,
+        "surviving_attack": 75132,
+        "precision": 0.31337611889883465,
+        "recall": 0.049393068199968054,
+        "f1": 0.08533584749465357,
+        "roc_auc": 0.5299772097423182,
+        "pr_auc": 0.1276777662587427,
+        "fpr": 0.009874429223744293,
+        "tn": 815309,
+        "fp": 8131,
+        "fn": 71421,
+        "tp": 3711,
+        "alerts": 11842
+      },
+      {
+        "condition": "random_30",
+        "model": "fixed_step_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.3,
+        "observability": 0.6998178680981595,
+        "original_rows": 998060,
+        "surviving_rows": 699525,
+        "original_attack": 83456,
+        "surviving_attack": 58404,
+        "precision": 0.20228815690218757,
+        "recall": 0.027549482912129306,
+        "f1": 0.04849452967238314,
+        "roc_auc": 0.545298853247255,
+        "pr_auc": 0.108181533686677,
+        "fpr": 0.009896727762778008,
+        "tn": 634776,
+        "fp": 6345,
+        "fn": 56795,
+        "tp": 1609,
+        "alerts": 7954
+      },
+      {
+        "condition": "random_30",
+        "model": "delta_t_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.3,
+        "observability": 0.6998178680981595,
+        "original_rows": 998060,
+        "surviving_rows": 699525,
+        "original_attack": 83456,
+        "surviving_attack": 58404,
+        "precision": 0.28494077834179354,
+        "recall": 0.043250462297102936,
+        "f1": 0.07510145832404228,
+        "roc_auc": 0.5299173466251647,
+        "pr_auc": 0.12115789971457855,
+        "fpr": 0.009887369154964508,
+        "tn": 634782,
+        "fp": 6339,
+        "fn": 55878,
+        "tp": 2526,
+        "alerts": 8865
+      },
+      {
+        "condition": "random_50",
+        "model": "fixed_step_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.5,
+        "observability": 0.5004912768404908,
+        "original_rows": 998060,
+        "surviving_rows": 500594,
+        "original_attack": 83456,
+        "surviving_attack": 41769,
+        "precision": 0.1722651338243219,
+        "recall": 0.022959611194905312,
+        "f1": 0.04051884400878824,
+        "roc_auc": 0.544001096382531,
+        "pr_auc": 0.10393854512332082,
+        "fpr": 0.010043044733830981,
+        "tn": 454217,
+        "fp": 4608,
+        "fn": 40810,
+        "tp": 959,
+        "alerts": 5567
+      },
+      {
+        "condition": "random_50",
+        "model": "delta_t_kalman",
+        "loss_type": "random",
+        "loss_rate": 0.5,
+        "observability": 0.5004912768404908,
+        "original_rows": 998060,
+        "surviving_rows": 500594,
+        "original_attack": 83456,
+        "surviving_attack": 41769,
+        "precision": 0.2518530997304582,
+        "recall": 0.03579209461562403,
+        "f1": 0.06267686825280369,
+        "roc_auc": 0.5285472213344881,
+        "pr_auc": 0.11102289542711434,
+        "fpr": 0.009679071541437366,
+        "tn": 454384,
+        "fp": 4441,
+        "fn": 40274,
+        "tp": 1495,
+        "alerts": 5936
+      },
+      {
+        "condition": "burst_10",
+        "model": "fixed_step_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.1,
+        "observability": 0.899635736196319,
+        "original_rows": 998060,
+        "surviving_rows": 898572,
+        "original_attack": 83456,
+        "surviving_attack": 75080,
+        "precision": 0.22418716035737313,
+        "recall": 0.032418753329781565,
+        "f1": 0.056646147759405144,
+        "roc_auc": 0.5459324930216934,
+        "pr_auc": 0.1074727069908123,
+        "fpr": 0.010228393232721143,
+        "tn": 815069,
+        "fp": 8423,
+        "fn": 72646,
+        "tp": 2434,
+        "alerts": 10857
+      },
+      {
+        "condition": "burst_10",
+        "model": "delta_t_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.1,
+        "observability": 0.899635736196319,
+        "original_rows": 998060,
+        "surviving_rows": 898572,
+        "original_attack": 83456,
+        "surviving_attack": 75080,
+        "precision": 0.3109587896012706,
+        "recall": 0.049547149706979224,
+        "f1": 0.08547499511735579,
+        "roc_auc": 0.5294212637722008,
+        "pr_auc": 0.118377720965399,
+        "fpr": 0.010009811874310862,
+        "tn": 815249,
+        "fp": 8243,
+        "fn": 71360,
+        "tp": 3720,
+        "alerts": 11963
+      },
+      {
+        "condition": "burst_30",
+        "model": "fixed_step_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.3,
+        "observability": 0.6948931173312883,
+        "original_rows": 998060,
+        "surviving_rows": 699525,
+        "original_attack": 83456,
+        "surviving_attack": 57993,
+        "precision": 0.15260513091774663,
+        "recall": 0.01989895332195265,
+        "f1": 0.03520707802608497,
+        "roc_auc": 0.5474559734832767,
+        "pr_auc": 0.1027163891676294,
+        "fpr": 0.009988589813134809,
+        "tn": 635124,
+        "fp": 6408,
+        "fn": 56839,
+        "tp": 1154,
+        "alerts": 7562
+      },
+      {
+        "condition": "burst_30",
+        "model": "delta_t_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.3,
+        "observability": 0.6948931173312883,
+        "original_rows": 998060,
+        "surviving_rows": 699525,
+        "original_attack": 83456,
+        "surviving_attack": 57993,
+        "precision": 0.2432853717026379,
+        "recall": 0.034986981187384684,
+        "f1": 0.06117618681500912,
+        "roc_auc": 0.5316434859798412,
+        "pr_auc": 0.10728549200606399,
+        "fpr": 0.009837389249484048,
+        "tn": 635221,
+        "fp": 6311,
+        "fn": 55964,
+        "tp": 2029,
+        "alerts": 8340
+      },
+      {
+        "condition": "burst_50",
+        "model": "fixed_step_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.5,
+        "observability": 0.4981307515337423,
+        "original_rows": 998060,
+        "surviving_rows": 500594,
+        "original_attack": 83456,
+        "surviving_attack": 41572,
+        "precision": 0.12466539196940726,
+        "recall": 0.015683633214663716,
+        "f1": 0.027862057177043716,
+        "roc_auc": 0.5452958401566438,
+        "pr_auc": 0.0992195006351328,
+        "fpr": 0.009973378182309344,
+        "tn": 454444,
+        "fp": 4578,
+        "fn": 40920,
+        "tp": 652,
+        "alerts": 5230
+      },
+      {
+        "condition": "burst_50",
+        "model": "delta_t_kalman",
+        "loss_type": "burst",
+        "loss_rate": 0.5,
+        "observability": 0.4981307515337423,
+        "original_rows": 998060,
+        "surviving_rows": 500594,
+        "original_attack": 83456,
+        "surviving_attack": 41572,
+        "precision": 0.1648148148148148,
+        "recall": 0.02140864043105937,
+        "f1": 0.037894916120241845,
+        "roc_auc": 0.5300256544446423,
+        "pr_auc": 0.10052841920094503,
+        "fpr": 0.00982523713460357,
+        "tn": 454512,
+        "fp": 4510,
+        "fn": 40682,
+        "tp": 890,
+        "alerts": 5400
+      }
+    ],
+    "evidence_conformal": [
+      {
+        "condition": "clean",
+        "loss_type": "random",
+        "loss_rate": 0.0,
+        "boundaries": {
+          "gap_q1": 2.0,
+          "gap_q2": 9.0,
+          "unc_q1": 0.20139381383123894,
+          "unc_q2": 0.5531088124971361
+        },
+        "global_threshold": 23.53429174024924,
+        "evidence_thresholds": {
+          "0": 31.91453828212268,
+          "1": 10.312008410487872,
+          "2": 4.043453233039066
+        },
+        "global_metrics": {
+          "precision": 0.3239426471647813,
+          "recall": 0.05387269938650307,
+          "f1": 0.09238197976062054,
+          "roc_auc": 0.5306532752849826,
+          "pr_auc": 0.1313906043241146,
+          "fpr": 0.010259084806101876,
+          "tn": 905221,
+          "fp": 9383,
+          "fn": 78960,
+          "tp": 4496
+        },
+        "conditioned_metrics": {
+          "precision": 0.3551491819056785,
+          "recall": 0.06190088190184049,
+          "f1": 0.10542641986898227,
+          "roc_auc": 0.5306532752849826,
+          "pr_auc": 0.1313906043241146,
+          "fpr": 0.010255804697989512,
+          "tn": 905224,
+          "fp": 9380,
+          "fn": 78290,
+          "tp": 5166
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 302337,
+            "fpr": 0.03056523019015205
+          },
+          "medium": {
+            "normal_rows": 306316,
+            "fpr": 0.00034604787213204664
+          },
+          "high": {
+            "normal_rows": 305951,
+            "fpr": 0.00011766590074881272
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 302337,
+            "fpr": 0.010567677790015778
+          },
+          "medium": {
+            "normal_rows": 306316,
+            "fpr": 0.010626281356507658
+          },
+          "high": {
+            "normal_rows": 305951,
+            "fpr": 0.009576696922056146
+          }
+        }
+      },
+      {
+        "condition": "random_10",
+        "loss_type": "random",
+        "loss_rate": 0.1,
+        "boundaries": {
+          "gap_q1": 2.0,
+          "gap_q2": 12.0,
+          "unc_q1": 0.21402400459876225,
+          "unc_q2": 0.7109793832660222
+        },
+        "global_threshold": 27.557193072449618,
+        "evidence_thresholds": {
+          "0": 39.31076255483203,
+          "1": 11.01083489063672,
+          "2": 4.060878054503668
+        },
+        "global_metrics": {
+          "precision": 0.3148936170212766,
+          "recall": 0.04933333333333333,
+          "f1": 0.08530259365994236,
+          "roc_auc": 0.5308801816963179,
+          "pr_auc": 0.12765249829206513,
+          "fpr": 0.009774494518997732,
+          "tn": 815522,
+          "fp": 8050,
+          "fn": 71300,
+          "tp": 3700
+        },
+        "conditioned_metrics": {
+          "precision": 0.3555277364838432,
+          "recall": 0.060586666666666664,
+          "f1": 0.10353037673300601,
+          "roc_auc": 0.5308801816963179,
+          "pr_auc": 0.12765249829206513,
+          "fpr": 0.010001554205339666,
+          "tn": 815335,
+          "fp": 8237,
+          "fn": 70456,
+          "tp": 4544
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 275687,
+            "fpr": 0.028728231654013427
+          },
+          "medium": {
+            "normal_rows": 271785,
+            "fpr": 0.0003458616185587873
+          },
+          "high": {
+            "normal_rows": 276100,
+            "fpr": 0.00013038754074610649
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 275687,
+            "fpr": 0.010352319840979082
+          },
+          "medium": {
+            "normal_rows": 271785,
+            "fpr": 0.009816582960796218
+          },
+          "high": {
+            "normal_rows": 276100,
+            "fpr": 0.00983339369793553
+          }
+        }
+      },
+      {
+        "condition": "random_30",
+        "loss_type": "random",
+        "loss_rate": 0.3,
+        "boundaries": {
+          "gap_q1": 3.0,
+          "gap_q2": 13.0,
+          "unc_q1": 0.25703699051314616,
+          "unc_q2": 0.7596030690729871
+        },
+        "global_threshold": 39.60411753422097,
+        "evidence_thresholds": {
+          "0": 57.87828264726549,
+          "1": 13.426636074171485,
+          "2": 4.296336224895102
+        },
+        "global_metrics": {
+          "precision": 0.2856653732024652,
+          "recall": 0.04275124684019949,
+          "f1": 0.07437230723518051,
+          "roc_auc": 0.5294642227271841,
+          "pr_auc": 0.12026677828502964,
+          "fpr": 0.009764780951578607,
+          "tn": 634718,
+          "fp": 6259,
+          "fn": 56045,
+          "tp": 2503
+        },
+        "conditioned_metrics": {
+          "precision": 0.3419835043250855,
+          "recall": 0.05807200929152149,
+          "f1": 0.09928456709008614,
+          "roc_auc": 0.5294642227271841,
+          "pr_auc": 0.12026677828502964,
+          "fpr": 0.01020629445362314,
+          "tn": 634435,
+          "fp": 6542,
+          "fn": 55148,
+          "tp": 3400
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 213079,
+            "fpr": 0.02897986192914365
+          },
+          "medium": {
+            "normal_rows": 212137,
+            "fpr": 0.00028283609177088393
+          },
+          "high": {
+            "normal_rows": 215761,
+            "fpr": 0.00011123418968210196
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 213079,
+            "fpr": 0.00986957888858123
+          },
+          "medium": {
+            "normal_rows": 212137,
+            "fpr": 0.010479077200111249
+          },
+          "high": {
+            "normal_rows": 215761,
+            "fpr": 0.010270623513980746
+          }
+        }
+      },
+      {
+        "condition": "random_50",
+        "loss_type": "random",
+        "loss_rate": 0.5,
+        "boundaries": {
+          "gap_q1": 4.0,
+          "gap_q2": 16.0,
+          "unc_q1": 0.32929414958521963,
+          "unc_q2": 0.9181257142857151
+        },
+        "global_threshold": 60.430764694869104,
+        "evidence_thresholds": {
+          "0": 96.81235457470781,
+          "1": 16.18511695927169,
+          "2": 5.606148202220693
+        },
+        "global_metrics": {
+          "precision": 0.25991048593350385,
+          "recall": 0.03895263876578109,
+          "f1": 0.06775141148773933,
+          "roc_auc": 0.5280319784973737,
+          "pr_auc": 0.1124147478282796,
+          "fpr": 0.01009042150937886,
+          "tn": 454221,
+          "fp": 4630,
+          "fn": 40117,
+          "tp": 1626
+        },
+        "conditioned_metrics": {
+          "precision": 0.3193571950328707,
+          "recall": 0.052368061710945546,
+          "f1": 0.08998106528360912,
+          "roc_auc": 0.5280319784973737,
+          "pr_auc": 0.1124147478282796,
+          "fpr": 0.010153622853606072,
+          "tn": 454192,
+          "fp": 4659,
+          "fn": 39557,
+          "tp": 2186
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 154172,
+            "fpr": 0.029758970500479983
+          },
+          "medium": {
+            "normal_rows": 156688,
+            "fpr": 0.0001659348514244869
+          },
+          "high": {
+            "normal_rows": 147991,
+            "fpr": 0.00010811468264962059
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 154172,
+            "fpr": 0.01003424746387152
+          },
+          "medium": {
+            "normal_rows": 156688,
+            "fpr": 0.009981619524149903
+          },
+          "high": {
+            "normal_rows": 147991,
+            "fpr": 0.010460095546350792
+          }
+        }
+      },
+      {
+        "condition": "burst_10",
+        "loss_type": "burst",
+        "loss_rate": 0.1,
+        "boundaries": {
+          "gap_q1": 2.0,
+          "gap_q2": 11.0,
+          "unc_q1": 0.20159193108615198,
+          "unc_q2": 0.6776873314133638
+        },
+        "global_threshold": 26.794146676527355,
+        "evidence_thresholds": {
+          "0": 44.3366056588557,
+          "1": 10.696633682379316,
+          "2": 4.018916366055109
+        },
+        "global_metrics": {
+          "precision": 0.31429551496441127,
+          "recall": 0.048724391443651205,
+          "f1": 0.08436924493554328,
+          "roc_auc": 0.5298416902317904,
+          "pr_auc": 0.11918437315805804,
+          "fpr": 0.009711508915374086,
+          "tn": 815357,
+          "fp": 7996,
+          "fn": 71554,
+          "tp": 3665
+        },
+        "conditioned_metrics": {
+          "precision": 0.34385713146775093,
+          "recall": 0.05733923609726266,
+          "f1": 0.09828855313233519,
+          "roc_auc": 0.5298416902317904,
+          "pr_auc": 0.11918437315805804,
+          "fpr": 0.0099957126530176,
+          "tn": 815123,
+          "fp": 8230,
+          "fn": 70906,
+          "tp": 4313
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 276042,
+            "fpr": 0.02852464480042892
+          },
+          "medium": {
+            "normal_rows": 272234,
+            "fpr": 0.0003416178728593783
+          },
+          "high": {
+            "normal_rows": 275077,
+            "fpr": 0.00010542502644714026
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 276042,
+            "fpr": 0.009712290158743959
+          },
+          "medium": {
+            "normal_rows": 272234,
+            "fpr": 0.010358735499606956
+          },
+          "high": {
+            "normal_rows": 275077,
+            "fpr": 0.009920858523249854
+          }
+        }
+      },
+      {
+        "condition": "burst_30",
+        "loss_type": "burst",
+        "loss_rate": 0.3,
+        "boundaries": {
+          "gap_q1": 2.0,
+          "gap_q2": 13.0,
+          "unc_q1": 0.21611871219923925,
+          "unc_q2": 0.7416712491994704
+        },
+        "global_threshold": 47.52475623518487,
+        "evidence_thresholds": {
+          "0": 122.83987063515004,
+          "1": 13.704484124033653,
+          "2": 4.013351168880639
+        },
+        "global_metrics": {
+          "precision": 0.24367203584837108,
+          "recall": 0.03434619324001366,
+          "f1": 0.060206173227403986,
+          "roc_auc": 0.5293627302951106,
+          "pr_auc": 0.10733354101439754,
+          "fpr": 0.009743425722955949,
+          "tn": 634700,
+          "fp": 6245,
+          "fn": 56568,
+          "tp": 2012
+        },
+        "conditioned_metrics": {
+          "precision": 0.3024840624313036,
+          "recall": 0.04697849095254353,
+          "f1": 0.08132628032743285,
+          "roc_auc": 0.5293627302951106,
+          "pr_auc": 0.10733354101439754,
+          "fpr": 0.009901005546497749,
+          "tn": 634599,
+          "fp": 6346,
+          "fn": 55828,
+          "tp": 2752
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 212447,
+            "fpr": 0.02902370944282574
+          },
+          "medium": {
+            "normal_rows": 212689,
+            "fpr": 0.00029150543751674983
+          },
+          "high": {
+            "normal_rows": 215809,
+            "fpr": 7.8773359776469e-05
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 212447,
+            "fpr": 0.010091928810479791
+          },
+          "medium": {
+            "normal_rows": 212689,
+            "fpr": 0.009854764468308188
+          },
+          "high": {
+            "normal_rows": 215809,
+            "fpr": 0.009758629158190807
+          }
+        }
+      },
+      {
+        "condition": "burst_50",
+        "loss_type": "burst",
+        "loss_rate": 0.5,
+        "boundaries": {
+          "gap_q1": 2.0,
+          "gap_q2": 13.0,
+          "unc_q1": 0.23484929774515362,
+          "unc_q2": 0.7825868065164624
+        },
+        "global_threshold": 114.21348180438865,
+        "evidence_thresholds": {
+          "0": 284.62005177740633,
+          "1": 14.581127697132958,
+          "2": 4.08275623866345
+        },
+        "global_metrics": {
+          "precision": 0.17071843251088534,
+          "recall": 0.02280382891069914,
+          "f1": 0.04023344806208179,
+          "roc_auc": 0.5297264426095398,
+          "pr_auc": 0.09996236951690902,
+          "fpr": 0.009951472691687223,
+          "tn": 454758,
+          "fp": 4571,
+          "fn": 40324,
+          "tp": 941
+        },
+        "conditioned_metrics": {
+          "precision": 0.27320432928829125,
+          "recall": 0.04037319762510602,
+          "f1": 0.07035027342018031,
+          "roc_auc": 0.5297264426095398,
+          "pr_auc": 0.09996236951690902,
+          "fpr": 0.00964885735496779,
+          "tn": 454897,
+          "fp": 4432,
+          "fn": 39599,
+          "tp": 1666
+        },
+        "global_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 153206,
+            "fpr": 0.029718157252326932
+          },
+          "medium": {
+            "normal_rows": 167308,
+            "fpr": 6.574700552274847e-05
+          },
+          "high": {
+            "normal_rows": 138815,
+            "fpr": 5.0426827072002304e-05
+          }
+        },
+        "conditioned_fpr_by_evidence": {
+          "low": {
+            "normal_rows": 153206,
+            "fpr": 0.010110570082111667
+          },
+          "medium": {
+            "normal_rows": 167308,
+            "fpr": 0.009479522796279914
+          },
+          "high": {
+            "normal_rows": 138815,
+            "fpr": 0.009343370673198141
+          }
+        }
+      }
+    ],
+    "frozen_calibration": {
+      "calibration_source": "clean_validation_only",
+      "global_threshold": 23.53429174024924,
+      "evidence_boundaries": {
+        "gap_q1": 2.0,
+        "gap_q2": 9.0,
+        "unc_q1": 0.20139381383123894,
+        "unc_q2": 0.5531088124971361
+      },
+      "evidence_thresholds": {
+        "0": 31.91453828212268,
+        "1": 10.312008410487872,
+        "2": 4.043453233039066
+      },
+      "results": [
+        {
+          "condition": "clean",
+          "loss_type": "random",
+          "loss_rate": 0.0,
+          "global_metrics": {
+            "precision": 0.3239426471647813,
+            "recall": 0.05387269938650307,
+            "f1": 0.09238197976062054,
+            "roc_auc": 0.5306532752849826,
+            "pr_auc": 0.1313906043241146,
+            "fpr": 0.010259084806101876,
+            "tn": 905221,
+            "fp": 9383,
+            "fn": 78960,
+            "tp": 4496
+          },
+          "conditioned_metrics": {
+            "precision": 0.3551491819056785,
+            "recall": 0.06190088190184049,
+            "f1": 0.10542641986898227,
+            "roc_auc": 0.5306532752849826,
+            "pr_auc": 0.1313906043241146,
+            "fpr": 0.010255804697989512,
+            "tn": 905224,
+            "fp": 9380,
+            "fn": 78290,
+            "tp": 5166
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 302337,
+              "fpr": 0.03056523019015205
+            },
+            "medium": {
+              "normal_rows": 306316,
+              "fpr": 0.00034604787213204664
+            },
+            "high": {
+              "normal_rows": 305951,
+              "fpr": 0.00011766590074881272
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 302337,
+              "fpr": 0.010567677790015778
+            },
+            "medium": {
+              "normal_rows": 306316,
+              "fpr": 0.010626281356507658
+            },
+            "high": {
+              "normal_rows": 305951,
+              "fpr": 0.009576696922056146
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 337357,
+              "fraction": 0.33801274472476606
+            },
+            "medium": {
+              "rows": 330468,
+              "fraction": 0.3311103540869286
+            },
+            "high": {
+              "rows": 330235,
+              "fraction": 0.3308769011883053
+            }
+          }
+        },
+        {
+          "condition": "random_10",
+          "loss_type": "random",
+          "loss_rate": 0.1,
+          "global_metrics": {
+            "precision": 0.2616418080382557,
+            "recall": 0.06128,
+            "f1": 0.09930211956874015,
+            "roc_auc": 0.5308801816963179,
+            "pr_auc": 0.12765249829206513,
+            "fpr": 0.015748471293341688,
+            "tn": 810602,
+            "fp": 12970,
+            "fn": 70404,
+            "tp": 4596
+          },
+          "conditioned_metrics": {
+            "precision": 0.3236544850498339,
+            "recall": 0.06494666666666667,
+            "f1": 0.10818434203220433,
+            "roc_auc": 0.5308801816963179,
+            "pr_auc": 0.12765249829206513,
+            "fpr": 0.012359575119115269,
+            "tn": 813393,
+            "fp": 10179,
+            "fn": 70129,
+            "tp": 4871
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 288601,
+              "fpr": 0.044518210262611706
+            },
+            "medium": {
+              "normal_rows": 324481,
+              "fpr": 0.0003112662991053405
+            },
+            "high": {
+              "normal_rows": 210490,
+              "fpr": 9.976720984369804e-05
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 288601,
+              "fpr": 0.019147542801306996
+            },
+            "medium": {
+              "normal_rows": 324481,
+              "fpr": 0.007864867280364644
+            },
+            "high": {
+              "normal_rows": 210490,
+              "fpr": 0.00998147180388617
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 321217,
+              "fraction": 0.3574749713990643
+            },
+            "medium": {
+              "rows": 350242,
+              "fraction": 0.3897762227178234
+            },
+            "high": {
+              "rows": 227113,
+              "fraction": 0.2527488058831123
+            }
+          }
+        },
+        {
+          "condition": "random_30",
+          "loss_type": "random",
+          "loss_rate": 0.3,
+          "global_metrics": {
+            "precision": 0.19174696271470465,
+            "recall": 0.07817517250802761,
+            "f1": 0.11106797058894902,
+            "roc_auc": 0.5294642227271841,
+            "pr_auc": 0.12026677828502964,
+            "fpr": 0.030099363939735748,
+            "tn": 621684,
+            "fp": 19293,
+            "fn": 53971,
+            "tp": 4577
+          },
+          "conditioned_metrics": {
+            "precision": 0.25001413787253296,
+            "recall": 0.07551069208171074,
+            "f1": 0.11598955805381013,
+            "roc_auc": 0.5294642227271841,
+            "pr_auc": 0.12026677828502964,
+            "fpr": 0.02069028997920362,
+            "tn": 627715,
+            "fp": 13262,
+            "fn": 54127,
+            "tp": 4421
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 253553,
+              "fpr": 0.07578297239630373
+            },
+            "medium": {
+              "normal_rows": 296712,
+              "fpr": 0.0002190676480897301
+            },
+            "high": {
+              "normal_rows": 90712,
+              "fpr": 0.00014331069759238027
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 253553,
+              "fpr": 0.041257646330353025
+            },
+            "medium": {
+              "normal_rows": 296712,
+              "fpr": 0.006164226590094098
+            },
+            "high": {
+              "normal_rows": 90712,
+              "fpr": 0.010715230619984126
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 281185,
+              "fraction": 0.40196561952753657
+            },
+            "medium": {
+              "rows": 320470,
+              "fraction": 0.4581251563560988
+            },
+            "high": {
+              "rows": 97870,
+              "fraction": 0.13990922411636467
+            }
+          }
+        },
+        {
+          "condition": "random_50",
+          "loss_type": "random",
+          "loss_rate": 0.5,
+          "global_metrics": {
+            "precision": 0.1545787040231868,
+            "recall": 0.10732338356131567,
+            "f1": 0.12668787557440792,
+            "roc_auc": 0.5280319784973737,
+            "pr_auc": 0.1124147478282796,
+            "fpr": 0.053398597801900836,
+            "tn": 434349,
+            "fp": 24502,
+            "fn": 37263,
+            "tp": 4480
+          },
+          "conditioned_metrics": {
+            "precision": 0.19116616031783126,
+            "recall": 0.0979804997245047,
+            "f1": 0.12955747727200734,
+            "roc_auc": 0.5280319784973737,
+            "pr_auc": 0.1124147478282796,
+            "fpr": 0.03771376765006505,
+            "tn": 441546,
+            "fp": 17305,
+            "fn": 37653,
+            "tp": 4090
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 213826,
+              "fpr": 0.1143546622019773
+            },
+            "medium": {
+              "normal_rows": 217088,
+              "fpr": 0.00020268278301886793
+            },
+            "high": {
+              "normal_rows": 27937,
+              "fpr": 0.0002147689444106382
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 213826,
+              "fpr": 0.0726244703637537
+            },
+            "medium": {
+              "normal_rows": 217088,
+              "fpr": 0.006882001768867925
+            },
+            "high": {
+              "normal_rows": 27937,
+              "fpr": 0.010094140387299996
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 235926,
+              "fraction": 0.4712921049792846
+            },
+            "medium": {
+              "rows": 234575,
+              "fraction": 0.4685933111463581
+            },
+            "high": {
+              "rows": 30093,
+              "fraction": 0.060114583874357266
+            }
+          }
+        },
+        {
+          "condition": "burst_10",
+          "loss_type": "burst",
+          "loss_rate": 0.1,
+          "global_metrics": {
+            "precision": 0.269412849677221,
+            "recall": 0.058256557518712025,
+            "f1": 0.09579817235800796,
+            "roc_auc": 0.5298416902317904,
+            "pr_auc": 0.11918437315805804,
+            "fpr": 0.014432448779563565,
+            "tn": 811470,
+            "fp": 11883,
+            "fn": 70837,
+            "tp": 4382
+          },
+          "conditioned_metrics": {
+            "precision": 0.3093748024527467,
+            "recall": 0.06506334835613342,
+            "f1": 0.1075155429600826,
+            "roc_auc": 0.5298416902317904,
+            "pr_auc": 0.11918437315805804,
+            "fpr": 0.01326891381946747,
+            "tn": 812428,
+            "fp": 10925,
+            "fn": 70325,
+            "tp": 4894
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 283943,
+              "fpr": 0.041430850558034533
+            },
+            "medium": {
+              "normal_rows": 286814,
+              "fpr": 0.0003207653740751846
+            },
+            "high": {
+              "normal_rows": 252596,
+              "fpr": 0.0001068900536825603
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 283943,
+              "fpr": 0.0194053031770461
+            },
+            "medium": {
+              "normal_rows": 286814,
+              "fpr": 0.010323763833006757
+            },
+            "high": {
+              "normal_rows": 252596,
+              "fpr": 0.009715118212481591
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 316337,
+              "fraction": 0.3520441322453849
+            },
+            "medium": {
+              "rows": 309496,
+              "fraction": 0.34443094153835196
+            },
+            "high": {
+              "rows": 272739,
+              "fraction": 0.30352492621626315
+            }
+          }
+        },
+        {
+          "condition": "burst_30",
+          "loss_type": "burst",
+          "loss_rate": 0.3,
+          "global_metrics": {
+            "precision": 0.19914802981895632,
+            "recall": 0.07022874701263229,
+            "f1": 0.10383906711426336,
+            "roc_auc": 0.5293627302951106,
+            "pr_auc": 0.10733354101439754,
+            "fpr": 0.025811887135401633,
+            "tn": 624401,
+            "fp": 16544,
+            "fn": 54466,
+            "tp": 4114
+          },
+          "conditioned_metrics": {
+            "precision": 0.23328404797108593,
+            "recall": 0.07272106520996928,
+            "f1": 0.11087830715373304,
+            "roc_auc": 0.5293627302951106,
+            "pr_auc": 0.10733354101439754,
+            "fpr": 0.021844308013948155,
+            "tn": 626944,
+            "fp": 14001,
+            "fn": 54320,
+            "tp": 4260
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 241564,
+              "fpr": 0.06811031445082877
+            },
+            "medium": {
+              "normal_rows": 234457,
+              "fpr": 0.0003284184306717223
+            },
+            "high": {
+              "normal_rows": 164924,
+              "fpr": 8.488758458441464e-05
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 241564,
+              "fpr": 0.042009570962560645
+            },
+            "medium": {
+              "normal_rows": 234457,
+              "fpr": 0.009929326059789216
+            },
+            "high": {
+              "normal_rows": 164924,
+              "fpr": 0.009246683320802309
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 268458,
+              "fraction": 0.3837718451806583
+            },
+            "medium": {
+              "rows": 252923,
+              "fraction": 0.3615639183731818
+            },
+            "high": {
+              "rows": 178144,
+              "fraction": 0.2546642364461599
+            }
+          }
+        },
+        {
+          "condition": "burst_50",
+          "loss_type": "burst",
+          "loss_rate": 0.5,
+          "global_metrics": {
+            "precision": 0.15073907851937252,
+            "recall": 0.08871925360474979,
+            "f1": 0.11169758359775446,
+            "roc_auc": 0.5297264426095398,
+            "pr_auc": 0.09996236951690902,
+            "fpr": 0.04490463262715831,
+            "tn": 438703,
+            "fp": 20626,
+            "fn": 37604,
+            "tp": 3661
+          },
+          "conditioned_metrics": {
+            "precision": 0.1730362972921068,
+            "recall": 0.0873379377196171,
+            "f1": 0.11608393860821671,
+            "roc_auc": 0.5297264426095398,
+            "pr_auc": 0.09996236951690902,
+            "fpr": 0.037498176688169044,
+            "tn": 442105,
+            "fp": 17224,
+            "fn": 37661,
+            "tp": 3604
+          },
+          "global_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 192199,
+              "fpr": 0.10695164907205552
+            },
+            "medium": {
+              "normal_rows": 174059,
+              "fpr": 0.0003217299881074808
+            },
+            "high": {
+              "normal_rows": 93071,
+              "fpr": 0.0001504227955002095
+            }
+          },
+          "conditioned_fpr_by_evidence": {
+            "low": {
+              "normal_rows": 192199,
+              "fpr": 0.07569758427463202
+            },
+            "medium": {
+              "normal_rows": 174059,
+              "fpr": 0.010530911932160934
+            },
+            "high": {
+              "normal_rows": 93071,
+              "fpr": 0.009046856700798316
+            }
+          },
+          "evidence_distribution": {
+            "low": {
+              "rows": 212657,
+              "fraction": 0.4248093265200941
+            },
+            "medium": {
+              "rows": 187610,
+              "fraction": 0.37477476757611955
+            },
+            "high": {
+              "rows": 100327,
+              "fraction": 0.2004159059037863
+            }
+          }
+        }
+      ]
+    },
+    "final_ablation": {
+      "stage": "4.1",
+      "description": "Final ablation of elapsed-time modeling and evidence-conditioned calibration",
+      "results": {
+        "fixed_step_kalman": {
+          "dt_aware": false,
+          "evidence_conditioned": false,
+          "f1": 0.065,
+          "pr_auc": 0.1186,
+          "recall": 0.0373,
+          "precision": 0.2524,
+          "fpr": 0.0101
+        },
+        "dt_aware_kalman": {
+          "dt_aware": true,
+          "evidence_conditioned": false,
+          "f1": 0.0924,
+          "pr_auc": 0.1314,
+          "recall": 0.0539,
+          "precision": 0.3239,
+          "fpr": 0.0103
+        },
+        "gapguard": {
+          "dt_aware": true,
+          "evidence_conditioned": true,
+          "f1": 0.1054,
+          "recall": 0.0619,
+          "fpr": 0.0103
+        }
+      },
+      "relative_improvements": {
+        "fixed_to_dt_kalman_f1_percent": 42.15384615384614,
+        "dt_kalman_to_gapguard_f1_percent": 14.069264069264067,
+        "fixed_to_gapguard_f1_percent": 62.15384615384614
+      }
+    }
+  }
+}

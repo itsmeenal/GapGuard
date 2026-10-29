@@ -1,0 +1,11 @@
+{
+  "state_space": 27,
+  "actions": [
+    "SUPPRESS",
+    "ALERT",
+    "UNVERIFIABLE"
+  ],
+  "training_samples": 100000,
+  "episodes": 10,
+  "policy_file": "results\\rl_policy\\gapguard_rl_policy.npy"
+}

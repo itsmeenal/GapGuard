@@ -1,0 +1,31 @@
+{
+  "stage": "4.10",
+  "description": "Live synthetic altitude attack demonstration",
+  "trajectory": "ceb_3e2f2d34_v0.csv",
+  "messages_published": 12,
+  "attack_index": 6,
+  "attack_type": "synthetic_altitude_injection",
+  "altitude_offset_meters": 5000.0,
+  "attack_message": {
+    "t_elapsed_sec": 45.0,
+    "dt": 1.0,
+    "latitude": 14.49973,
+    "longitude": 121.003601,
+    "altitude_meters": 5000.0,
+    "speed_kmh": 129.6,
+    "verticalSpeed_ms": 0.0,
+    "heading": 61.0,
+    "synthetic_attack": true
+  },
+  "attack_detection_result": {
+    "timestamp": 45.0,
+    "gap_seconds": 1.0,
+    "severity": 2343.7613438686217,
+    "evidence": "high",
+    "threshold": 4.043453,
+    "decision": "ALERT",
+    "first_observation": false
+  },
+  "mqtt_alerts_received": [],
+  "alert_received": false
+}

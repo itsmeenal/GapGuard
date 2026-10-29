@@ -1,0 +1,20 @@
+{
+  "stage": "3.5",
+  "model": "GRU_next_step_prediction",
+  "window_size": 10,
+  "hidden_size": 32,
+  "epochs": 5,
+  "training_rows": 200000,
+  "threshold": 1657.2340087890625,
+  "precision": 0.1258086717136958,
+  "recall": 0.05475939417177914,
+  "f1": 0.07630592497975472,
+  "roc_auc": 0.552285087271934,
+  "pr_auc": 0.10866058866059873,
+  "fpr": 0.034719944369366415,
+  "true_negative": 882849,
+  "false_positive": 31755,
+  "false_negative": 78886,
+  "true_positive": 4570,
+  "predicted_alerts": 36325
+}

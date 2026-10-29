@@ -1,0 +1,2015 @@
+{
+  "telemetry_received": 223,
+  "alerts": 0,
+  "unverifiable": 18,
+  "suppressed": 205,
+  "results": [
+    {
+      "timestamp": 0.0,
+      "gap_seconds": 0.0,
+      "severity": 0.0,
+      "evidence": "high",
+      "threshold": 23.534292,
+      "decision": "SUPPRESS",
+      "first_observation": true
+    },
+    {
+      "timestamp": 10.0,
+      "gap_seconds": 10.0,
+      "severity": 0.0032856446645999978,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 33.0,
+      "gap_seconds": 23.0,
+      "severity": 0.09094740979144736,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 36.0,
+      "gap_seconds": 3.0,
+      "severity": 0.2253334441416667,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 44.0,
+      "gap_seconds": 8.0,
+      "severity": 1.0954044299902175,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 45.0,
+      "gap_seconds": 1.0,
+      "severity": 0.011343868621875003,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 46.0,
+      "gap_seconds": 1.0,
+      "severity": 0.020535111964687533,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 49.0,
+      "gap_seconds": 3.0,
+      "severity": 0.16576427253666684,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 50.0,
+      "gap_seconds": 1.0,
+      "severity": 0.02053542376874987,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 53.0,
+      "gap_seconds": 3.0,
+      "severity": 0.018254216327500034,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 55.0,
+      "gap_seconds": 2.0,
+      "severity": 0.25661023736205896,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 57.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0596493199782353,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 59.0,
+      "gap_seconds": 2.0,
+      "severity": 0.05873425849147066,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 64.0,
+      "gap_seconds": 5.0,
+      "severity": 0.23185645939349966,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 68.0,
+      "gap_seconds": 4.0,
+      "severity": 0.13529509247763205,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 71.0,
+      "gap_seconds": 3.0,
+      "severity": 0.046406500414999725,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 77.0,
+      "gap_seconds": 6.0,
+      "severity": 0.3440003001714285,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 86.0,
+      "gap_seconds": 9.0,
+      "severity": 0.723435848425,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 93.0,
+      "gap_seconds": 7.0,
+      "severity": 0.48504377214818173,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 101.0,
+      "gap_seconds": 8.0,
+      "severity": 0.879726725108478,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 109.0,
+      "gap_seconds": 8.0,
+      "severity": 0.5520204558704348,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 118.0,
+      "gap_seconds": 9.0,
+      "severity": 0.36444501099249993,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 128.0,
+      "gap_seconds": 10.0,
+      "severity": 0.595619162931,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 137.0,
+      "gap_seconds": 9.0,
+      "severity": 0.4410228149356249,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 145.0,
+      "gap_seconds": 8.0,
+      "severity": 0.5436594725693479,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 154.0,
+      "gap_seconds": 9.0,
+      "severity": 0.44102148738249997,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 160.0,
+      "gap_seconds": 6.0,
+      "severity": 0.4282321292378574,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 168.0,
+      "gap_seconds": 8.0,
+      "severity": 0.2867841778832609,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 192.0,
+      "gap_seconds": 24.0,
+      "severity": 1.242464909621924,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 205.0,
+      "gap_seconds": 13.0,
+      "severity": 0.43769876269821395,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 207.0,
+      "gap_seconds": 2.0,
+      "severity": 0.015004362505588233,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 209.0,
+      "gap_seconds": 2.0,
+      "severity": 0.04191948509117635,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 211.0,
+      "gap_seconds": 2.0,
+      "severity": 0.024691450610294256,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 214.0,
+      "gap_seconds": 3.0,
+      "severity": 0.008651172509999954,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 216.0,
+      "gap_seconds": 2.0,
+      "severity": 0.06686482960676464,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 218.0,
+      "gap_seconds": 2.0,
+      "severity": 0.02365549205117637,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 220.0,
+      "gap_seconds": 2.0,
+      "severity": 0.01633017898676468,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 224.0,
+      "gap_seconds": 4.0,
+      "severity": 0.11094840106815804,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 233.0,
+      "gap_seconds": 9.0,
+      "severity": 0.686643543673125,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 235.0,
+      "gap_seconds": 2.0,
+      "severity": 0.04782479542058824,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 238.0,
+      "gap_seconds": 3.0,
+      "severity": 0.04529131055083334,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 240.0,
+      "gap_seconds": 2.0,
+      "severity": 0.18785878425882357,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 242.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0806918612558824,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 244.0,
+      "gap_seconds": 2.0,
+      "severity": 0.08479934161588235,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 251.0,
+      "gap_seconds": 7.0,
+      "severity": 0.6691758900443181,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 253.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0806923582808824,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 255.0,
+      "gap_seconds": 2.0,
+      "severity": 0.1274205203894118,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 257.0,
+      "gap_seconds": 2.0,
+      "severity": 0.08594377193823531,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 259.0,
+      "gap_seconds": 2.0,
+      "severity": 0.07941997338088236,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 262.0,
+      "gap_seconds": 3.0,
+      "severity": 0.08008887992166665,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 275.0,
+      "gap_seconds": 13.0,
+      "severity": 1.256391513518571,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 288.0,
+      "gap_seconds": 13.0,
+      "severity": 1.52388851668125,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 314.0,
+      "gap_seconds": 26.0,
+      "severity": 7.160524798270244,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 341.0,
+      "gap_seconds": 27.0,
+      "severity": 2.321553050874999,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 355.0,
+      "gap_seconds": 14.0,
+      "severity": 0.9772180676384485,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 422.0,
+      "gap_seconds": 67.0,
+      "severity": 8.8823788898322,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 437.0,
+      "gap_seconds": 15.0,
+      "severity": 1.1767347647079998,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 468.0,
+      "gap_seconds": 31.0,
+      "severity": 2.913434536516304,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 500.0,
+      "gap_seconds": 32.0,
+      "severity": 2.350039051159149,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 532.0,
+      "gap_seconds": 32.0,
+      "severity": 0.7635223562176597,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 564.0,
+      "gap_seconds": 32.0,
+      "severity": 0.728766129822766,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 690.0,
+      "gap_seconds": 126.0,
+      "severity": 18.3899436134154,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 721.0,
+      "gap_seconds": 31.0,
+      "severity": 1.3921279348597826,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 786.0,
+      "gap_seconds": 65.0,
+      "severity": 4.6154902112402,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 851.0,
+      "gap_seconds": 65.0,
+      "severity": 3.300837112045001,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 883.0,
+      "gap_seconds": 32.0,
+      "severity": 1.0695458548985104,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 915.0,
+      "gap_seconds": 32.0,
+      "severity": 1.3595408721957447,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 947.0,
+      "gap_seconds": 32.0,
+      "severity": 0.5201046984057446,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 980.0,
+      "gap_seconds": 33.0,
+      "severity": 0.673893317828125,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1012.0,
+      "gap_seconds": 32.0,
+      "severity": 0.7498659600552127,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1108.0,
+      "gap_seconds": 96.0,
+      "severity": 3.123877035865001,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1140.0,
+      "gap_seconds": 32.0,
+      "severity": 0.9807446736462763,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1172.0,
+      "gap_seconds": 32.0,
+      "severity": 0.8190913579994684,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1235.0,
+      "gap_seconds": 63.0,
+      "severity": 0.8801448279055999,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1266.0,
+      "gap_seconds": 31.0,
+      "severity": 0.5459743397484783,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1298.0,
+      "gap_seconds": 32.0,
+      "severity": 0.6732638311356383,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1329.0,
+      "gap_seconds": 31.0,
+      "severity": 0.7649317084359782,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1423.0,
+      "gap_seconds": 94.0,
+      "severity": 0.6322163300755997,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1454.0,
+      "gap_seconds": 31.0,
+      "severity": 0.0017416961876087567,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1517.0,
+      "gap_seconds": 63.0,
+      "severity": 0.0037117391762000857,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1549.0,
+      "gap_seconds": 32.0,
+      "severity": 0.0014526309095742233,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1613.0,
+      "gap_seconds": 64.0,
+      "severity": 0.003777511456400367,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1644.0,
+      "gap_seconds": 31.0,
+      "severity": 0.0013442713190216235,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1675.0,
+      "gap_seconds": 31.0,
+      "severity": 0.0013323063339131373,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1705.0,
+      "gap_seconds": 30.0,
+      "severity": 0.0013428518613333902,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1738.0,
+      "gap_seconds": 33.0,
+      "severity": 0.0013987818362496507,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1768.0,
+      "gap_seconds": 30.0,
+      "severity": 0.001329266050666728,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1799.0,
+      "gap_seconds": 31.0,
+      "severity": 0.0018368069038046096,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1862.0,
+      "gap_seconds": 63.0,
+      "severity": 0.003598164401999955,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1924.0,
+      "gap_seconds": 62.0,
+      "severity": 0.00443775619079984,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 1956.0,
+      "gap_seconds": 32.0,
+      "severity": 0.3640844192543618,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2051.0,
+      "gap_seconds": 95.0,
+      "severity": 6.552738414913999,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2112.0,
+      "gap_seconds": 61.0,
+      "severity": 3.294968111829,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2145.0,
+      "gap_seconds": 33.0,
+      "severity": 1.4403092516324993,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2177.0,
+      "gap_seconds": 32.0,
+      "severity": 1.8225314879546808,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2208.0,
+      "gap_seconds": 31.0,
+      "severity": 2.332967255533043,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2272.0,
+      "gap_seconds": 64.0,
+      "severity": 6.219075874564199,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2303.0,
+      "gap_seconds": 31.0,
+      "severity": 2.199553376945543,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2333.0,
+      "gap_seconds": 30.0,
+      "severity": 2.2619267275146666,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2397.0,
+      "gap_seconds": 64.0,
+      "severity": 5.408589037686399,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2429.0,
+      "gap_seconds": 32.0,
+      "severity": 2.407913582273937,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2453.0,
+      "gap_seconds": 24.0,
+      "severity": 1.7456949301496152,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2455.0,
+      "gap_seconds": 2.0,
+      "severity": 0.022599487178823537,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2457.0,
+      "gap_seconds": 2.0,
+      "severity": 0.043861649373529335,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2461.0,
+      "gap_seconds": 4.0,
+      "severity": 0.0770568673594738,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2464.0,
+      "gap_seconds": 3.0,
+      "severity": 0.044096270780833335,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2466.0,
+      "gap_seconds": 2.0,
+      "severity": 0.019862254489411774,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2470.0,
+      "gap_seconds": 4.0,
+      "severity": 0.08024813489684193,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2472.0,
+      "gap_seconds": 2.0,
+      "severity": 0.019866316109999997,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2477.0,
+      "gap_seconds": 5.0,
+      "severity": 0.07165211858475011,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2481.0,
+      "gap_seconds": 4.0,
+      "severity": 0.08023198568999985,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2486.0,
+      "gap_seconds": 5.0,
+      "severity": 0.0675498699255,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2488.0,
+      "gap_seconds": 2.0,
+      "severity": 0.019864548477352945,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2490.0,
+      "gap_seconds": 2.0,
+      "severity": 0.022600463245588235,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2494.0,
+      "gap_seconds": 4.0,
+      "severity": 0.16107243565421053,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2501.0,
+      "gap_seconds": 7.0,
+      "severity": 0.1443683451525,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2503.0,
+      "gap_seconds": 2.0,
+      "severity": 0.02100692925617642,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2505.0,
+      "gap_seconds": 2.0,
+      "severity": 0.022605390891176472,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2537.0,
+      "gap_seconds": 32.0,
+      "severity": 1.8001639074638296,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2567.0,
+      "gap_seconds": 30.0,
+      "severity": 1.5424118897946666,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2600.0,
+      "gap_seconds": 33.0,
+      "severity": 1.7763716476140619,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2664.0,
+      "gap_seconds": 64.0,
+      "severity": 3.7878759319057997,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2692.0,
+      "gap_seconds": 28.0,
+      "severity": 1.192187085867907,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2731.0,
+      "gap_seconds": 39.0,
+      "severity": 0.7958197186716667,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2746.0,
+      "gap_seconds": 15.0,
+      "severity": 0.16117767460250018,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2758.0,
+      "gap_seconds": 12.0,
+      "severity": 0.15026250589166673,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2771.0,
+      "gap_seconds": 13.0,
+      "severity": 0.21125142567053562,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2784.0,
+      "gap_seconds": 13.0,
+      "severity": 0.3811447613357142,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2798.0,
+      "gap_seconds": 14.0,
+      "severity": 0.30543932997155177,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2811.0,
+      "gap_seconds": 13.0,
+      "severity": 0.26172128417410706,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2824.0,
+      "gap_seconds": 13.0,
+      "severity": 0.26697298639339273,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2837.0,
+      "gap_seconds": 13.0,
+      "severity": 0.6993412073871427,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2850.0,
+      "gap_seconds": 13.0,
+      "severity": 0.6199923720412501,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2865.0,
+      "gap_seconds": 15.0,
+      "severity": 0.8350231683465,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2890.0,
+      "gap_seconds": 25.0,
+      "severity": 1.149431833576875,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2919.0,
+      "gap_seconds": 29.0,
+      "severity": 0.896322587921591,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2959.0,
+      "gap_seconds": 40.0,
+      "severity": 1.6339938662230908,
+      "evidence": "low",
+      "threshold": 31.914538,
+      "decision": "UNVERIFIABLE",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2976.0,
+      "gap_seconds": 17.0,
+      "severity": 1.0981925589721875,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2979.0,
+      "gap_seconds": 3.0,
+      "severity": 0.01996055475416679,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2983.0,
+      "gap_seconds": 4.0,
+      "severity": 0.051342764672368424,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2985.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0246921144714704,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2987.0,
+      "gap_seconds": 2.0,
+      "severity": 0.016721369712353048,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 2989.0,
+      "gap_seconds": 2.0,
+      "severity": 0.009164255950588363,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3000.0,
+      "gap_seconds": 11.0,
+      "severity": 0.16928069301057624,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3004.0,
+      "gap_seconds": 4.0,
+      "severity": 0.013793212258421126,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3006.0,
+      "gap_seconds": 2.0,
+      "severity": 0.006798542227941155,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3008.0,
+      "gap_seconds": 2.0,
+      "severity": 0.00692607176558821,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3012.0,
+      "gap_seconds": 4.0,
+      "severity": 0.02733618102394738,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3015.0,
+      "gap_seconds": 3.0,
+      "severity": 0.004091210566666681,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3017.0,
+      "gap_seconds": 2.0,
+      "severity": 0.010483783557352916,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3023.0,
+      "gap_seconds": 6.0,
+      "severity": 0.031760975195714414,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3025.0,
+      "gap_seconds": 2.0,
+      "severity": 0.006926116055294063,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3027.0,
+      "gap_seconds": 2.0,
+      "severity": 0.005652488421176494,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3035.0,
+      "gap_seconds": 8.0,
+      "severity": 0.05371213257391303,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3042.0,
+      "gap_seconds": 7.0,
+      "severity": 0.026042642340681873,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3050.0,
+      "gap_seconds": 8.0,
+      "severity": 0.03981256880478272,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3066.0,
+      "gap_seconds": 16.0,
+      "severity": 0.11615299129258028,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3084.0,
+      "gap_seconds": 18.0,
+      "severity": 0.1320295826590911,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3092.0,
+      "gap_seconds": 8.0,
+      "severity": 0.026311969776521685,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3114.0,
+      "gap_seconds": 22.0,
+      "severity": 0.14584403180797323,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3119.0,
+      "gap_seconds": 5.0,
+      "severity": 0.049936362858749854,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3127.0,
+      "gap_seconds": 8.0,
+      "severity": 0.02677660089000009,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3129.0,
+      "gap_seconds": 2.0,
+      "severity": 3.1451029411726915e-06,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3131.0,
+      "gap_seconds": 2.0,
+      "severity": 3.0541279411828555e-06,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3133.0,
+      "gap_seconds": 2.0,
+      "severity": 0.00692434520470584,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3140.0,
+      "gap_seconds": 7.0,
+      "severity": 0.033911834904545496,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3162.0,
+      "gap_seconds": 22.0,
+      "severity": 0.15100949538689187,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3170.0,
+      "gap_seconds": 8.0,
+      "severity": 0.09421611840000002,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3183.0,
+      "gap_seconds": 13.0,
+      "severity": 0.029108024657678606,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3192.0,
+      "gap_seconds": 9.0,
+      "severity": 0.007458646286249909,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3201.0,
+      "gap_seconds": 9.0,
+      "severity": 0.09110693994562512,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3209.0,
+      "gap_seconds": 8.0,
+      "severity": 0.09515211247565217,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3216.0,
+      "gap_seconds": 7.0,
+      "severity": 0.06927700489159093,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3222.0,
+      "gap_seconds": 6.0,
+      "severity": 0.05877991754428562,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3224.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0012767914420587984,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3227.0,
+      "gap_seconds": 3.0,
+      "severity": 0.03142051978416665,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3229.0,
+      "gap_seconds": 2.0,
+      "severity": 0.011070818542058904,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3231.0,
+      "gap_seconds": 2.0,
+      "severity": 0.005470908431470645,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3237.0,
+      "gap_seconds": 6.0,
+      "severity": 0.04301479317857144,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3240.0,
+      "gap_seconds": 3.0,
+      "severity": 0.004565692139999968,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3246.0,
+      "gap_seconds": 6.0,
+      "severity": 0.005621974418571417,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3250.0,
+      "gap_seconds": 4.0,
+      "severity": 0.014965741772368285,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3252.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0011459649900000238,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3257.0,
+      "gap_seconds": 5.0,
+      "severity": 0.017855300167500025,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3277.0,
+      "gap_seconds": 20.0,
+      "severity": 0.19712738256428547,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3279.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0011460405352940772,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3281.0,
+      "gap_seconds": 2.0,
+      "severity": 0.004326955599705872,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3283.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0012764548694117904,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3285.0,
+      "gap_seconds": 2.0,
+      "severity": 0.005649415257352961,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3287.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0056494890150000044,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3289.0,
+      "gap_seconds": 2.0,
+      "severity": 0.0043259576647058815,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3300.0,
+      "gap_seconds": 11.0,
+      "severity": 0.030556221095192276,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3307.0,
+      "gap_seconds": 7.0,
+      "severity": 0.008116224535909083,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3322.0,
+      "gap_seconds": 15.0,
+      "severity": 0.02724240990499993,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3329.0,
+      "gap_seconds": 7.0,
+      "severity": 0.007096656265227386,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3344.0,
+      "gap_seconds": 15.0,
+      "severity": 0.002801600650000097,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3360.0,
+      "gap_seconds": 16.0,
+      "severity": 0.233100673968871,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3375.0,
+      "gap_seconds": 15.0,
+      "severity": 0.28467814848249995,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3383.0,
+      "gap_seconds": 8.0,
+      "severity": 0.13997978880586953,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3392.0,
+      "gap_seconds": 9.0,
+      "severity": 0.13733705889062497,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3398.0,
+      "gap_seconds": 6.0,
+      "severity": 0.035616138835714274,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3407.0,
+      "gap_seconds": 9.0,
+      "severity": 0.09589383678062502,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3416.0,
+      "gap_seconds": 9.0,
+      "severity": 0.06996104431250003,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3422.0,
+      "gap_seconds": 6.0,
+      "severity": 0.041708836928571455,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3439.0,
+      "gap_seconds": 17.0,
+      "severity": 0.21741912487171883,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3446.0,
+      "gap_seconds": 7.0,
+      "severity": 0.06651899140159086,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3453.0,
+      "gap_seconds": 7.0,
+      "severity": 0.061378803383181836,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3462.0,
+      "gap_seconds": 9.0,
+      "severity": 0.06350535683812494,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3468.0,
+      "gap_seconds": 6.0,
+      "severity": 0.06430227235785715,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3477.0,
+      "gap_seconds": 9.0,
+      "severity": 0.03398516050000001,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3502.0,
+      "gap_seconds": 25.0,
+      "severity": 0.37586239014787487,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3509.0,
+      "gap_seconds": 7.0,
+      "severity": 0.06927188260159083,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3520.0,
+      "gap_seconds": 11.0,
+      "severity": 0.1252661716644231,
+      "evidence": "medium",
+      "threshold": 10.312008,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3522.0,
+      "gap_seconds": 2.0,
+      "severity": 0.00432595959617648,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3524.0,
+      "gap_seconds": 2.0,
+      "severity": 0.001145532918529417,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3526.0,
+      "gap_seconds": 2.0,
+      "severity": 0.010480180928823496,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3528.0,
+      "gap_seconds": 2.0,
+      "severity": 0.011069814557646926,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3533.0,
+      "gap_seconds": 5.0,
+      "severity": 0.0253982608275001,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3535.0,
+      "gap_seconds": 2.0,
+      "severity": 0.09843332079705903,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3537.0,
+      "gap_seconds": 2.0,
+      "severity": 0.036173777863235196,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3539.0,
+      "gap_seconds": 2.0,
+      "severity": 0.05873543288647067,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3542.0,
+      "gap_seconds": 3.0,
+      "severity": 0.041070936400833286,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    },
+    {
+      "timestamp": 3544.0,
+      "gap_seconds": 2.0,
+      "severity": 0.1935574370276472,
+      "evidence": "high",
+      "threshold": 4.043453,
+      "decision": "SUPPRESS",
+      "first_observation": false
+    }
+  ]
+}

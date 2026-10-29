@@ -1,0 +1,17 @@
+{
+  "alpha": 0.1,
+  "gamma": 0.9,
+  "epsilon": 0.19022202609315436,
+  "epsilon_min": 0.02,
+  "actions": {
+    "0": "SUPPRESS",
+    "1": "ALERT",
+    "2": "UNVERIFIABLE"
+  },
+  "state_shape": [
+    3,
+    3,
+    3,
+    3
+  ]
+}

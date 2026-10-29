@@ -1,0 +1,49 @@
+{
+  "experiment": "fixed_step_vs_delta_t_kalman",
+  "fixed_step": {
+    "threshold": 136.6166606547048,
+    "precision": 0.25243348475016225,
+    "recall": 0.03728911042944785,
+    "f1": 0.06497953729224087,
+    "roc_auc": 0.5465841229372957,
+    "pr_auc": 0.11862813599194635,
+    "fpr": 0.010076492121180313,
+    "tn": 905388,
+    "fp": 9216,
+    "fn": 80344,
+    "tp": 3112,
+    "test_rows": 998060,
+    "attack_rows": 83456,
+    "predicted_alerts": 12328
+  },
+  "delta_t_aware": {
+    "threshold": 23.534276739291833,
+    "precision": 0.3239426471647813,
+    "recall": 0.05387269938650307,
+    "f1": 0.09238197976062054,
+    "roc_auc": 0.5306532639786923,
+    "pr_auc": 0.13139060124410074,
+    "fpr": 0.010259084806101876,
+    "tn": 905221,
+    "fp": 9383,
+    "fn": 78960,
+    "tp": 4496,
+    "test_rows": 998060,
+    "attack_rows": 83456,
+    "predicted_alerts": 13879
+  },
+  "fixed_dt_seconds": 5.0,
+  "measurement_features": [
+    "latitude",
+    "longitude",
+    "altitude_meters",
+    "speed_kmh"
+  ],
+  "label_mapping": {
+    "0": "normal",
+    "1": "attack",
+    "2": "attack",
+    "3": "attack"
+  },
+  "note": "Labels are used only for evaluation. Derived columns and label columns are not detector inputs."
+}

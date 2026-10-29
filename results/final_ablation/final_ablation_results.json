@@ -1,0 +1,36 @@
+{
+  "stage": "4.1",
+  "description": "Final ablation of elapsed-time modeling and evidence-conditioned calibration",
+  "results": {
+    "fixed_step_kalman": {
+      "dt_aware": false,
+      "evidence_conditioned": false,
+      "f1": 0.065,
+      "pr_auc": 0.1186,
+      "recall": 0.0373,
+      "precision": 0.2524,
+      "fpr": 0.0101
+    },
+    "dt_aware_kalman": {
+      "dt_aware": true,
+      "evidence_conditioned": false,
+      "f1": 0.0924,
+      "pr_auc": 0.1314,
+      "recall": 0.0539,
+      "precision": 0.3239,
+      "fpr": 0.0103
+    },
+    "gapguard": {
+      "dt_aware": true,
+      "evidence_conditioned": true,
+      "f1": 0.1054,
+      "recall": 0.0619,
+      "fpr": 0.0103
+    }
+  },
+  "relative_improvements": {
+    "fixed_to_dt_kalman_f1_percent": 42.15384615384614,
+    "dt_kalman_to_gapguard_f1_percent": 14.069264069264067,
+    "fixed_to_gapguard_f1_percent": 62.15384615384614
+  }
+}

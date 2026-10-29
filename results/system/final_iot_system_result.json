@@ -1,0 +1,13 @@
+{
+  "telemetry_messages_received": 223,
+  "alerts": 0,
+  "unverifiable": 18,
+  "suppressed": 205,
+  "mqtt_broker": "AMQTT",
+  "mqtt_host": "127.0.0.1",
+  "mqtt_port": 1884,
+  "telemetry_topic": "gapguard/adsb/telemetry",
+  "alert_topic": "gapguard/alerts",
+  "detector": "delta-t-aware GapGuard",
+  "calibration": "frozen clean validation calibration"
+}

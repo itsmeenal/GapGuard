@@ -1,0 +1,20 @@
+{
+  "stage": "3.6",
+  "model": "delta_t_kalman_gru_residual",
+  "window_size": 8,
+  "hidden_size": 24,
+  "epochs": 5,
+  "training_windows": 150000,
+  "threshold": 0.9924119734763877,
+  "precision": 0.26347402597402597,
+  "recall": 0.03889474693251534,
+  "f1": 0.06778316070831941,
+  "roc_auc": 0.5802476407286303,
+  "pr_auc": 0.1257587610948275,
+  "fpr": 0.009921233670528447,
+  "true_negative": 905530,
+  "false_positive": 9074,
+  "false_negative": 80210,
+  "true_positive": 3246,
+  "predicted_alerts": 12320
+}

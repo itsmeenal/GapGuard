@@ -1,0 +1,96 @@
+{
+  "stage": "4.4",
+  "purpose": "Condition-level robustness and consistency summary for frozen calibration",
+  "results": [
+    {
+      "condition": "clean",
+      "global_f1": 0.0924,
+      "gapguard_f1": 0.1054,
+      "global_fpr": 0.0103,
+      "gapguard_fpr": 0.0103,
+      "global_recall": 0.0539,
+      "gapguard_recall": 0.0619,
+      "f1_relative_change_percent": 14.069264069264067,
+      "fpr_reduction_percent": -0.0
+    },
+    {
+      "condition": "random_10",
+      "global_f1": 0.0993,
+      "gapguard_f1": 0.1082,
+      "global_fpr": 0.0157,
+      "gapguard_fpr": 0.0124,
+      "global_recall": 0.0613,
+      "gapguard_recall": 0.0649,
+      "f1_relative_change_percent": 8.962739174219541,
+      "fpr_reduction_percent": 21.019108280254773
+    },
+    {
+      "condition": "random_30",
+      "global_f1": 0.1111,
+      "gapguard_f1": 0.116,
+      "global_fpr": 0.0301,
+      "gapguard_fpr": 0.0207,
+      "global_recall": 0.0782,
+      "gapguard_recall": 0.0755,
+      "f1_relative_change_percent": 4.410441044104411,
+      "fpr_reduction_percent": 31.22923588039867
+    },
+    {
+      "condition": "random_50",
+      "global_f1": 0.1267,
+      "gapguard_f1": 0.1296,
+      "global_fpr": 0.0534,
+      "gapguard_fpr": 0.0377,
+      "global_recall": 0.1073,
+      "gapguard_recall": 0.098,
+      "f1_relative_change_percent": 2.2888713496448188,
+      "fpr_reduction_percent": 29.40074906367042
+    },
+    {
+      "condition": "burst_10",
+      "global_f1": 0.0958,
+      "gapguard_f1": 0.1075,
+      "global_fpr": 0.0144,
+      "gapguard_fpr": 0.0133,
+      "global_recall": 0.0583,
+      "gapguard_recall": 0.0651,
+      "f1_relative_change_percent": 12.212943632567852,
+      "fpr_reduction_percent": 7.638888888888891
+    },
+    {
+      "condition": "burst_30",
+      "global_f1": 0.1038,
+      "gapguard_f1": 0.1109,
+      "global_fpr": 0.0258,
+      "gapguard_fpr": 0.0218,
+      "global_recall": 0.0702,
+      "gapguard_recall": 0.0727,
+      "f1_relative_change_percent": 6.84007707129094,
+      "fpr_reduction_percent": 15.503875968992247
+    },
+    {
+      "condition": "burst_50",
+      "global_f1": 0.1117,
+      "gapguard_f1": 0.1161,
+      "global_fpr": 0.0449,
+      "gapguard_fpr": 0.0375,
+      "global_recall": 0.0887,
+      "gapguard_recall": 0.0873,
+      "f1_relative_change_percent": 3.9391226499552388,
+      "fpr_reduction_percent": 16.481069042316264
+    }
+  ],
+  "summary": {
+    "f1_improved_conditions": 7,
+    "total_conditions": 7,
+    "packet_loss_fpr_reduced_conditions": 6,
+    "packet_loss_conditions": 6,
+    "average_relative_f1_improvement_percent": 7.531922713006695,
+    "average_packet_loss_fpr_reduction_percent": 20.212154520753543
+  },
+  "interpretation": {
+    "f1_consistency": "GapGuard improves F1 in every evaluated condition.",
+    "fpr_consistency": "GapGuard reduces FPR in every evaluated packet-loss condition.",
+    "statistical_significance": "Not tested because paired per-flight predictions were not saved."
+  }
+}

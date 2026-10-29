@@ -1,0 +1,17 @@
+@"
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+data/adsb_dataset.zip
+data/raw/
+data/simulated/
+data/processed/trajectories/
+*.zip
+
+.env
+.vscode/
+
+
+"@ | Out-File -Encoding utf8 .gitignore
